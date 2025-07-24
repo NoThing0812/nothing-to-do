@@ -1,0 +1,237 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background: #f8f9ff;
+  color: #333;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  background: white;
+  border-bottom: 1px solid #ddd;
+}
+
+.nav-links a {
+  margin-left: 20px;
+  text-decoration: none;
+  color: #333;
+
+}
+
+
+.yes{
+font-weight: bold;
+}
+
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px;
+  flex-wrap: wrap;
+}
+
+.hero-text {
+  flex: 1;
+}
+
+.hero img {
+  width: 300px;
+  height: auto;
+  flex: 1;
+}
+
+.highlight {
+  color: orange;
+}
+
+.plants {
+  padding: 40px;
+  text-align: center;
+}
+
+.plant-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.plant-card {
+  background: white;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 0 5px #ccc;
+}
+
+.plant-card img {
+  width: 100%;
+  height: auto;
+}
+
+.plant-card h3 {
+  margin: 10px 0 5px;
+}
+
+.plant-card button {
+  background: orange;
+  border: none;
+  color: white;
+  padding: 10px;
+  width: 100%;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+.lover-section {
+  display: flex;
+  align-items: center;
+  padding: 40px;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.lover-section img {
+  width: 300px;
+  height: auto;
+}
+
+.lover-text {
+  flex: 1;
+}
+
+.deals {
+  padding: 40px;
+  text-align: center;
+}
+
+.deal-cards {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.deal-card {
+  background: #222;
+  color: white;
+  padding: 20px;
+  width: 250px;
+  border-radius: 10px;
+}
+
+.deal-card button {
+  margin-top: 10px;
+  background: orange;
+  border: none;
+  padding: 8px 12px;
+  color: white;
+  cursor: pointer;
+}
+
+.subscribe {
+  background: url('flowers-bg.jpg') no-repeat center;
+  background-size: cover;
+  padding: 60px 20px;
+  text-align: center;
+  color: white;
+}
+
+.subscribe form {
+  margin-top: 20px;
+}
+
+.subscribe input {
+  padding: 10px;
+  width: 200px;
+  border: none;
+  margin-right: 10px;
+}
+
+.subscribe button {
+  padding: 10px 20px;
+  border: none;
+  background: orange;
+  color: white;
+  cursor: pointer;
+}
+
+footer {
+  background: #222;
+  color: white;
+  padding: 40px 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.footer-links a, .social a {
+  display: block;
+  margin: 5px 0;
+  text-decoration: none;
+  color: white;
+}
+
+/* RESPONSIVE SECTION */
+@media (max-width: 992px) {
+  .plant-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .hero {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .lover-section {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 600px) {
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .nav-links {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+  }
+
+  .plant-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .deal-cards {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .subscribe input {
+    width: 100%;
+    margin: 10px 0;
+  }
+
+  .subscribe button {
+    width: 100%;
+  }
+
+  footer {
+    flex-direction: column;
+    gap: 20px;
+  }
+}
+
