@@ -227,7 +227,7 @@ z-index: 5;
   padding: 20px;
   width: 250px;
   border-radius: 10px;
-  background-image: url(../B12A02-Responsive-Flowers/assets/deal-bloom.png);
+  
 }
 
 
@@ -334,4 +334,270 @@ footer {
     gap: 20px;
   }
 }
+
+
+
+.one{
+  background-image: url(../B12A02-Responsive-Flowers/assets/deal-bloom.png);
+}
+
+
+.two{
+background-image: url(../B12A02-Responsive-Flowers/assets/deal-ana.png);
+}
+.three{
+background-image: url(../B12A02-Responsive-Flowers/assets/deal-zabo.png);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Base Styles */
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.subscribe-section {
+  background-image: url(../B12A02-Responsive-Flowers/assets/news-letter-bg.png);
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.overlay {
+  padding: 2rem;
+  text-align: center;
+  border-radius: 10px;
+}
+
+.overlay h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+  font-weight: bold;
+}
+
+.subscribe-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.subscribe-form input[type="email"] {
+  padding: 0.8rem 1rem;
+  border: none;
+  border-radius: 4px 0 0 4px;
+  width: 300px;
+  max-width: 80%;
+  font-size: 1rem;
+  outline: none;
+}
+
+.subscribe-form button {
+  padding: 0.8rem 1.2rem;
+  border: none;
+  background-color: #ff5722;
+  color: white;
+  font-size: 1rem;
+  border-radius: 0 4px 4px 0;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.subscribe-form button:hover {
+  background-color: #e64a19;
+}
+
+/* Mobile Responsive */
+@media (max-width: 600px) {
+  .overlay h1 {
+    font-size: 1.8rem;
+  }
+
+  .subscribe-form {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .subscribe-form input[type="email"],
+  .subscribe-form button {
+    width: 100%;
+    border-radius: 4px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Responsive */
+@media (max-width: 768px) {
+  .flower-deals-container {
+    flex-direction: column;
+  }
+
+  .flower-right .flower-card {
+    height: 300px;
+  }
+
+  .flower-card {
+    height: 180px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Responsive */
+@media (max-width: 768px) {
+  .flower-offers {
+    flex-direction: column;
+  }
+
+  .large-card {
+    height: 300px;
+  }
+
+  .small-card {
+    height: 180px;
+  }
+}
+
+/* ✅ Responsive Styles */
+@media (max-width: 1024px) {
+  .deals-section {
+    padding: 30px 40px;
+  }
+
+  .heading h2 {
+    font-size: 28px;
+  }
+
+  .heading p {
+    font-size: 14px;
+  }
+
+  .deal-box.large {
+    height: 300px;
+  }
+}
+
+@media (max-width: 768px) {
+  .deals-container {
+    flex-direction: column;
+  }
+
+  .left-column,
+  .right-column {
+    width: 100%;
+  }
+
+  .deal-box,
+  .deal-box.large {
+    height: 200px;
+  }
+
+  .heading h2 {
+    font-size: 24px;
+  }
+
+  .heading p {
+    font-size: 13px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
