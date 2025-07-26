@@ -268,8 +268,8 @@ z-index: 5;
 }
 
 footer {
-  background: #222;
-  color: white;
+  background: #FFFFFF;
+  color: black;
   padding: 40px 20px;
   display: flex;
   flex-wrap: wrap;
@@ -277,10 +277,12 @@ footer {
 }
 
 .footer-links a, .social a {
-  display: block;
+  display: flex;
   margin: 5px 0;
   text-decoration: none;
-  color: white;
+
+
+  color: black;
 }
 
 /* RESPONSIVE SECTION */
@@ -594,6 +596,140 @@ body, html {
 
 
 
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: #f5f7fc;
+  color: #333;
+}
+
+.deals-section {
+  padding: 60px 20px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.deals-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.deals-header h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.deals-header .highlight {
+  color: #f76c1e;
+  font-weight: 700;
+}
+
+.deals-header p {
+  font-size: 16px;
+  color: #666;
+  max-width: 600px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+.deals-grid {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.deal-column {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.deal-large {
+  flex: 2;
+  min-height: 100%;
+  background-size: cover;
+  background-position: center;
+  border-radius: 16px;
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+  padding: 30px;
+  color: #fff;
+}
+
+.deal-card {
+  height: 180px;
+  background-size: cover;
+  background-position: center;
+  border-radius: 16px;
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+  padding: 20px;
+  color: #fff;
+}
+
+.deal-overlay {
+  background: rgba(0, 0, 0, 0.4);
+  padding: 15px;
+  border-radius: 10px;
+}
+
+.deal-overlay h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.btn {
+  background-color: #fff;
+  color: black;
+  padding: 6px 12px;
+  border-radius: 5px;
+  font-weight: 600;
+  
+  font-size: 14px;
+  display: inline-block;
+  justify-items: center;
+  
+  
+}
+
+.btn:hover {
+  background-color: #f76c1e;
+  color: white;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .deals-grid {
+    flex-direction: column;
+  }
+
+  .deal-large {
+    height: 200px;
+  }
+
+  .deal-card {
+    height: 160px;
+  }
+
+  .deal-overlay h3 {
+    font-size: 16px;
+  }
+
+  .btn {
+    font-size: 13px;
+    padding: 5px 10px;
+  }
+}
 
 
 
